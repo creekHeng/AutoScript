@@ -35,9 +35,13 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
       
-      # 测试运行python文件
+      # 安装python环境
       - name: Set up Python 3.9
         uses: actions/setup-python@v4
         with:
           python-version: '3.9'
-        run: python main.py
+      
+      # 执行python
+      - name: Run
+        run: 
+          python main.py
