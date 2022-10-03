@@ -37,8 +37,7 @@ jobs:
       
       # 测试运行python文件
       - name: Set up Python 3.9
-      - uses: actions/checkout@v3
-      - uses: actions/setup-python@v4
+        uses: actions/setup-python@v4
         with:
           python-version: '3.9'
-      - run: python main.py
+        run: python main.py
